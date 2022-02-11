@@ -45,6 +45,7 @@ header {
 /* Head styling */
 .head {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
@@ -290,17 +291,16 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-/* Art Galery Stylign */
+/* Art Gallery Stylign */
 .art-gallery {
     display: grid;
     grid-template: auto / 1fr 1fr 1fr 1fr;
-    min-height: 60vh;
-    height: 450px;
+    height: 60vh;
 }
 
 .art-gallery-images {
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 
 .milk-bottles {
@@ -317,4 +317,40 @@ nav ul li a:hover {
 
 .suggar-cubes {
     background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+@media screen and (max-width: 720px) {
+    /* Info styling */
+    .info-services {
+        grid-template: auto max-content / auto;
+        height: auto;
+    }
+
+    .info {
+        align-items: center;
+        text-align: center;
+        padding: 50px 30px;
+    }
+
+    #egg, #glass {
+        grid-row: 1 / 2;
+        height: 300px;
+    }
+
+    /* Services styling*/
+    .services {
+        height: 600px;
+        padding: 50px 20px;
+    }
+
+    /* Testimonials styling */
+    .testimonials-section h1 {
+        font-size: 1rem;
+    }
+
+    /* Art Gallery */
+    .art-gallery {
+        grid-template: 1fr 1fr / 1fr 1fr;
+        height: 400px;
+    }
 }
