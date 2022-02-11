@@ -358,7 +358,7 @@ nav ul li a:hover {
         padding: 10px 30px 40px;
         position: absolute;
         top: 100px;
-        right: -30px;
+        right: 0px;
         visibility: hidden;
         opacity: 0;
         transition: 400ms ease;
