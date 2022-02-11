@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 
+/* Configuration */
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +42,7 @@ header {
     flex-direction: column;
 }
 
+/* Head styling */
 .head {
     display: flex;
     justify-content: space-between;
@@ -96,7 +98,8 @@ nav ul li a:hover {
     color: var(--White);
 }
 
-.headerContent {
+/* Header Content styling */
+.header-content {
     text-align: center;
     align-self: center;
     margin-top: 8vh;
@@ -108,6 +111,210 @@ nav ul li a:hover {
     letter-spacing: 10px;
 }
 
-.headerContent img {
+.header-content img {
     margin: 12vh auto;
+}
+
+/* Info styling */
+.info-services {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    min-height: 550px;
+    height: 80vh;
+}
+
+.info {
+    background-color: hsl(60, 33%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20%;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 1rem;
+}
+
+.info h1 {
+    font-weight: 900;
+    font-size: 2.2em;
+}
+
+.info p:nth-of-type(1) {
+    margin: 40px 0;
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+}
+
+.learn-more {
+    position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--Very-dark-desaturated-blue);
+    padding:4px 8px;
+    z-index: 1;
+}
+
+.learn-more::after {
+    content: '';
+    height: 40%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.2;
+    transition: opacity 300ms ease-in-out;
+}
+
+.info-services > .info:nth-child(1) .learn-more::after {
+    background-color: var(--Yellow);
+}
+
+.info-services > .info:nth-child(2) .learn-more::after {
+    background-color: var(--Soft-red);
+}
+
+.learn-more:hover::after {
+    opacity: 1;
+}
+
+#egg {
+    background-image: url(images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#glass {
+    background-image: url(images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Services styling */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 1rem;
+    padding: 8% 25%;
+}
+
+.services h2 {
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+.services p {
+    margin-top: 10%;
+    line-height: 1.5;
+}
+
+#design {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--Dark-desaturated-cyan);
+}
+
+#design p {
+    opacity: 0.8;
+}
+
+#photography {
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--Dark-blue);
+}
+
+/* Client Testimonials styling */
+.testimonials-section {
+    background-color: hsl(60, 33%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 750px;
+    text-align: center;
+    padding: 90px 0;
+}
+
+.testimonials-section > h1 {
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--Grayish-blue);
+}
+
+.testimonials-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.testimonials {
+    max-width: 375px;
+    margin: 15px;
+}
+
+.testimonials blockquote {
+    color: var(--Very-dark-grayish-blue);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.client-images {
+    border-radius: 50%;
+    margin: 30px;
+    transform: scale(0.5);
+}
+
+.client {
+    margin-top: 50px;
+}
+
+.client-name {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 900;
+}
+
+.client-job {
+    color: var(--Grayish-blue);
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Art Galery Stylign */
+.art-gallery {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+    min-height: 60vh;
+    height: 450px;
+}
+
+.art-gallery-images {
+    background-size: cover;
+    background-position: center;
+}
+
+.milk-bottles {
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+}
+
+.orange {
+    background-image: url(images/desktop/image-gallery-orange.jpg);
+}
+
+.cone {
+    background-image: url(images/desktop/image-gallery-cone.jpg);
+}
+
+.suggar-cubes {
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
 }
