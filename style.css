@@ -334,6 +334,51 @@ nav ul li a:hover {
     background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
 }
 
+/* Footer styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(168, 47%, 73%);
+    padding: 50px;
+    color: var(--Dark-moderate);
+}
+
+.footer-logo {
+    font-family: 'Fraunces', cursive;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.footer-menu, .footer-social {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-menu a, .footer-social a {
+    text-decoration: none;
+    color: var(--Dark-moderate);
+    transition: color 300ms ease-in-out;
+}
+
+.footer-menu li, .footer-social li {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-menu a:hover, .footer-social a:hover {
+    color: var(--White);
+}
+
+.footer-menu {
+    margin: 30px 0 50px;
+}
+
+.footer-social {
+    font-size: 2em;
+}
+
 @media screen and (max-width: 720px) {
 
     /* Head */
@@ -492,5 +537,10 @@ nav ul li a:hover {
 
     .header-content img {
         margin-top: 50px;
+    }
+
+    /* Footer menu margin */
+    .footer-menu li {
+        margin: 4px;
     }
 }
