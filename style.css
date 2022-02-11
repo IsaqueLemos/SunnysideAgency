@@ -407,7 +407,7 @@ nav ul li a:hover {
 
     /* Header Content */
     .header-content {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     /* Info styling */
@@ -486,6 +486,10 @@ nav ul li a:hover {
     }
 
     /* Header Content margin */
+    .header-content {
+        font-size: 5vw;
+    }
+
     .header-content img {
         margin-top: 50px;
     }
